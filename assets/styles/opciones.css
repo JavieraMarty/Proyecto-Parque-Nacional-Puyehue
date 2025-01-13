@@ -1,9 +1,14 @@
 /* Opciones */
 .options-page {
-    background-color: #5a7d4b; /* Verde */
+    background-color: #5a7d4b; /* Fondo verde */
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+.options-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .options-grid {
@@ -14,16 +19,41 @@
 }
 
 .option-card {
-    background-color: #f4f4f4; /* Gris claro */
-    color: black;
+    text-decoration: none;
+    color: inherit;
+    background: #f4f4f4; /* Fondo gris claro */
     border-radius: 10px;
     overflow: hidden;
-    text-align: center;
     width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .option-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.option-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #333; /* Fondo negro más oscuro */
 }
