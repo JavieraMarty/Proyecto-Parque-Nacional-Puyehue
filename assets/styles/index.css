@@ -11,3 +11,26 @@ body {
     color: white; 
     text-align: center;
 }
+/* Cambiar el color del texto a blanco */
+body {
+    color: white; /* Hace que todo el texto sea blanco */
+}
+
+h1, p, button {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+}
+
+button {
+    background-color: white;
+    color: black; /* Botón con texto negro */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd; /* Gris claro cuando se pasa el mouse */
+}
