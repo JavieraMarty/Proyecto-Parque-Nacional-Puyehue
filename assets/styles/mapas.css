@@ -1,0 +1,14 @@
+/* Mapas */
+.mapa-page {
+    background-color: #f4f4f4; /* Gris claro */
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.mapa-image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
