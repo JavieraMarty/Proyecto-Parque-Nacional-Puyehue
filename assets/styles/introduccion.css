@@ -1,6 +1,6 @@
 /* Introducción */
 .intro-page {
-    background-color: #5a7d4b; /* Verde */
+    background-color: #5a7d4b; /* Fondo verde */
     color: white;
     text-align: center;
     padding: 20px;
@@ -14,6 +14,8 @@
 .intro-page p {
     font-size: 1.2em;
     line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .sectors {
@@ -24,15 +26,44 @@
 }
 
 .sector {
-    text-align: center;
     width: 150px;
     height: 200px;
-    border-radius: 10px;
-    background-color: #f4f4f4;
+    border-radius: 15px;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: black;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.sector:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sector p {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Fondo de cada sector */
+.antillanca {
+    background-image: url('../images/antillanca.png');
+}
+
+.anticura {
+    background-image: url('../images/anticura.png');
+}
+
+.aguas-calientes {
+    background-image: url('../images/aguas-calientes.png');
+}
+
