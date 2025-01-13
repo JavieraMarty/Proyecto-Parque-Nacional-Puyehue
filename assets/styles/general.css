@@ -20,7 +20,7 @@ button:hover {
     background-color: #ddd; /* Gris más oscuro */
 }
 
-/* Fondo verde y gris */
+/* Fondo y colores */
 .green-bg {
     background-color: #5a7d4b; /* Verde */
     color: white;
@@ -29,4 +29,10 @@ button:hover {
 .gray-bg {
     background-color: #f4f4f4; /* Gris claro */
     color: black;
+}
+
+/* Estilos de encabezados */
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
 }
