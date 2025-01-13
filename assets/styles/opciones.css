@@ -27,6 +27,7 @@
     width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
 }
 
 .option-card:hover {
@@ -35,11 +36,10 @@
 }
 
 .option-image {
+    width: 100%;
     height: 200px;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover; 
-    border-radius: 10px 10px 0 0; 
+    object-fit: cover; /* Ajusta la imagen para que cubra el espacio */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
 }
 
 button {
