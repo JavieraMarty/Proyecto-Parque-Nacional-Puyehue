@@ -1,0 +1,26 @@
+/* Senderos */
+.senderos-page {
+    background-color: #5a7d4b; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sendero-card {
+    background-color: #f4f4f4; /* Gris claro */
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+.sendero-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sendero-card p {
+    font-size: 1em;
+    margin: 5px 0;
+}
