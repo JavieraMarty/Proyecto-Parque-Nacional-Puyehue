@@ -1,0 +1,29 @@
+/* Opciones */
+.options-page {
+    background-color: #5a7d4b; /* Verde */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.options-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    background-color: #f4f4f4; /* Gris claro */
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
