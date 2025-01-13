@@ -26,6 +26,13 @@ button:hover {
     color: white;
 }
 
+.hero {
+    background-image: url('../images/1.png'); /* Ruta a la imagen */
+    background-size: cover; /* Hace que la imagen cubra el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
 .gray-bg {
     background-color: #f4f4f4; /* Gris claro */
     color: black;
