@@ -21,6 +21,7 @@ body {
 h1 {
     font-size: 3em; /* Tamaño del título */
     margin: 20px 0; /* Espaciado superior e inferior */
+    color: white;
 }
 
 /* Imagen del mapa */
@@ -60,4 +61,5 @@ h1 {
     font-size: 1.2em; /* Tamaño del texto */
     text-align: left; /* Alinea el texto a la izquierda */
     margin-right: 20px; /* Espaciado desde el borde derecho */
+    color: white;
 }
