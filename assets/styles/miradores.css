@@ -1,35 +1,53 @@
-/* Estilo general para la página del mirador */
+/* Estilo general */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-image: url('../images/mirador.png'); /* Imagen del mirador */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
-    height: 100vh; /* Hace que el cuerpo ocupe el 100% de la altura de la ventana */
+    background-color: black; 
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Alinea el contenido en la parte inferior */
-    color: white; /* Texto blanco */
+    align-items: center;
+    height: 100vh; 
+    color: white;
     text-align: center;
 }
 
-/* Contenedor para el contenido */
+/* Contenedor del mirador */
+.mirador-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    height: 90vh; 
+    border-radius: 10px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+/* Imagen del mirador */
+.mirador-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+/* Contenido del mirador */
 .mirador-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
-    max-width: 800px; /* Ancho máximo */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Espaciado desde el borde inferior */
+    border-radius: 0 0 10px 10px; 
+    z-index: 1; 
 }
 
 /* Título del mirador */
 .mirador-title {
     font-size: 2em;
     font-weight: bold;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +55,7 @@ body {
 }
 
 .mirador-title i {
-    font-size: 1.5em; /* Tamaño del icono */
+    font-size: 1.5em; 
 }
 
 /* Botón */
@@ -55,5 +73,5 @@ button {
 }
 
 button:hover {
-    background-color: #ddd; /* Cambia a gris claro al pasar el mouse */
+    background-color: #ddd; 
 }
