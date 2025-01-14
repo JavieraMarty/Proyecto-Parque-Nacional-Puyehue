@@ -45,17 +45,39 @@ body {
 .mapa-cuadro {
     width: 300px;
     height: 300px;
-    background-color: red; /* Fondo rojo */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-    overflow: hidden; /* Oculta desbordamientos */
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
 }
 
 .mapa-cuadro img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el cuadro */
+    object-fit: cover; 
+}
+
+/* Sección del código QR */
+.qr-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-section img {
+    width: 150px; 
+    height: auto;
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+}
+
+.qr-section img:hover {
+    transform: scale(1.1); 
+}
+
+.qr-section p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: black;
 }
