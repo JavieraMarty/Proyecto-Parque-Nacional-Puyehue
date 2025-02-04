@@ -1,26 +1,48 @@
-/* Senderos */
-.senderos-page {
-    background-color: #5a7d4b; /* Verde */
-    color: white;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #5a7d4b; 
+    color: white; 
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaciado entre columnas */
     padding: 20px;
-    text-align: center;
+    height: 100vh; /* Ocupa toda la pantalla */
 }
 
-.sendero-card {
-    background-color: #f4f4f4; /* Gris claro */
-    color: black;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 15px;
-    text-align: left;
+/* Columna izquierda */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre las imágenes */
 }
 
-.sendero-card h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.left-column .image {
+    width: 300px; /* Ancho de las imágenes */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 
-.sendero-card p {
-    font-size: 1em;
-    margin: 5px 0;
+/* Columna derecha */
+.right-column {
+    max-width: 600px; /* Ancho máximo del texto */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
+
+.right-column h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.right-column p {
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
